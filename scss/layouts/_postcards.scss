@@ -1,0 +1,134 @@
+.postcards {
+  background-color: var(--color-light-yellow);
+
+  &_title {
+    text-align: center;
+
+    font-size: 4.375rem;
+
+    max-width: 57rem;
+    margin: 0 auto;
+    margin-bottom: 9.0625rem;
+  }
+
+  &_list {
+    display: grid;
+    gap: 6.25rem;
+
+    &-item {
+      max-width: 50%;
+
+      &:nth-child(2) {
+        margin-left: auto;
+      }
+
+      &-title {
+        font-size: 3.75rem;
+
+        margin-bottom: 1.875rem;
+      }
+
+      &-description {
+        color: var(--color-gray);
+
+        font-size: 1.25rem;
+        font-weight: 500;
+
+        margin-bottom: 3rem;
+      }
+
+      &-card {
+        border: 1px solid var(--color-light-gray);
+        border-radius: 0.9375rem;
+
+        padding: 2.125rem;
+
+        position: relative;
+
+        &-quotes {
+          position: absolute;
+          top: -1.0625rem;
+          left: 1.875rem;
+
+          display: grid;
+          place-items: center;
+
+          width: 2.5rem;
+          height: 2.125rem;
+          background: var(--color-light-yellow);
+        }
+
+        &-text {
+          font-style: italic;
+          color: var(--color-gray);
+          line-height: 1.5;
+
+          margin-bottom: 1rem;
+        }
+
+        &-author {
+          display: flex;
+          justify-content: space-between;
+
+          p {
+            color: var(--color-light-brown);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $--bp-laptop) {
+    &_title {
+      margin-bottom: 7rem;
+    }
+
+    &_list {
+      &-item {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $--bp-tablet) {
+    &_title {
+      margin-bottom: 3rem;
+    }
+
+    &_list {
+      gap: 3rem;
+
+      &-item {
+        &-title {
+          font-size: 2.5rem;
+        }
+
+        &-description {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $--bp-mobile-m) {
+    &_list {
+      &-item {
+        &-title {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        &-description {
+          font-size: 0.875rem;
+          margin-bottom: 1.5rem;
+        }
+
+        &-card {
+          &-text {
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+  }
+}

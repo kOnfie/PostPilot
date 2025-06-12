@@ -1,0 +1,40 @@
+@import "reset.css";
+@import "styles.css";
+
+:root {
+  // colors
+  --color-black: #2e2f35;
+
+  --color-white: #fff;
+
+  --color-orange: #ff6d2c;
+  --color-light-orange: #faeded;
+
+  --color-green: #009387;
+  --color-light-green: #e0f8f2;
+
+  --color-gray: #58595d;
+  --color-light-gray: #d1c7be;
+  --color-light-gray-2: #f1f1f1;
+
+  --color-light-yellow: #fdf3ea;
+
+  --color-light-brown: #a89b90;
+
+  --color-light-violet: #eeecff;
+
+  --color-turquoise: #d9f2f7;
+
+  // breakpoints
+  --bp-mobile-m: 374.98px;
+  --bp-mobile-l: 424.98px;
+  --bp-tablet: 767.98px;
+  --bp-laptop: 1023.98px;
+}
+
+body {
+  font-family: Inter;
+  font-weight: 500;
+
+  color: var(--color-black);
+}

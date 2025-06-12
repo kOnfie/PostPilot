@@ -1,0 +1,14 @@
+.title {
+  font-size: 3.9375rem;
+
+  font-weight: 700;
+  line-height: 1.2;
+
+  span {
+    @include design-font;
+  }
+
+  @media (max-width: $--bp-tablet) {
+    font-size: 2.5rem;
+  }
+}
