@@ -25,13 +25,13 @@
     }
   }
 
-  @media (max-width: $--bp-laptop) {
+  @media (max-width: $bp-laptop) {
     &_list {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @media (max-width: $--bp-tablet) {
+  @media (max-width: $bp-tablet) {
     &_title {
       margin-bottom: 2rem;
     }
@@ -41,7 +41,7 @@
     }
   }
 
-  @media (max-width: $--bp-mobile-l) {
+  @media (max-width: $bp-mobile-l) {
     &_title {
       margin-bottom: 1.5rem;
     }

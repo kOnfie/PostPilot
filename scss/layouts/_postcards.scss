@@ -78,7 +78,7 @@
     }
   }
 
-  @media (max-width: $--bp-laptop) {
+  @media (max-width: $bp-laptop) {
     &_title {
       margin-bottom: 7rem;
     }
@@ -90,7 +90,7 @@
     }
   }
 
-  @media (max-width: $--bp-tablet) {
+  @media (max-width: $bp-tablet) {
     &_title {
       margin-bottom: 3rem;
     }
@@ -110,7 +110,7 @@
     }
   }
 
-  @media (max-width: $--bp-mobile-m) {
+  @media (max-width: $bp-mobile-m) {
     &_list {
       &-item {
         &-title {

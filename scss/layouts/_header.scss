@@ -37,6 +37,10 @@
   &_actions {
     display: flex;
     gap: 1rem;
+
+    button {
+      padding: 0.8125rem 1.375rem;
+    }
   }
 }
 
@@ -99,7 +103,7 @@
   }
 }
 
-@media (max-width: $--bp-laptop) {
+@media (max-width: $bp-laptop) {
   .burger {
     display: block;
   }

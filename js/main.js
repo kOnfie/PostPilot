@@ -19,5 +19,50 @@ const stepsToggleMenu = () => {
   });
 };
 
+const slidesPerView = () => {
+  const width = window.innerWidth;
+
+  if (width >= 1024) {
+    return 3;
+  }
+
+  if (width < 1024 && width >= 768) {
+    return 2;
+  }
+
+  if (width < 768) {
+    return 1;
+  }
+};
+
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: slidesPerView(),
+  spaceBetween: 32,
+  loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+});
+
+window.addEventListener("resize", () => {
+  const width = window.innerWidth;
+
+  if (width >= 1024) {
+    swiper.params.slidesPerView = 3;
+    swiper.update();
+  }
+
+  if (width < 1024 && width >= 768) {
+    swiper.params.slidesPerView = 2;
+    swiper.update();
+  }
+
+  if (width < 768) {
+    swiper.params.slidesPerView = 1;
+    swiper.update();
+  }
+});
+
 toggleBurgerMenu();
 stepsToggleMenu();

@@ -8,7 +8,7 @@
     @include design-font;
   }
 
-  @media (max-width: $--bp-tablet) {
+  @media (max-width: $bp-tablet) {
     font-size: 2.5rem;
   }
 }

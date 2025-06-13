@@ -14,14 +14,10 @@
   --color-light-brown: #a89b90;
   --color-light-violet: #eeecff;
   --color-turquoise: #d9f2f7;
-  --bp-mobile-m: 374.98px;
-  --bp-mobile-l: 424.98px;
-  --bp-tablet: 767.98px;
-  --bp-laptop: 1023.98px;
 }
 
 body {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-weight: 500;
   color: var(--color-black);
 }
@@ -111,6 +107,9 @@ table {
   display: flex;
   gap: 1rem;
 }
+.nav_actions button {
+  padding: 0.8125rem 1.375rem;
+}
 
 .burger {
   width: 25px;
@@ -155,7 +154,7 @@ table {
   transform: rotate(-45deg);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023.98px) {
   .burger {
     display: block;
   }
@@ -357,7 +356,7 @@ table {
     width: 100%;
   }
   .statistic_list-item-image {
-    max-width: 200px;
+    max-width: 12.5rem;
     margin: 0 auto;
   }
 }
@@ -564,7 +563,7 @@ table {
 }
 .steps__items--item:nth-child(1)::before {
   content: "01";
-  font-family: Covered By Your Grace;
+  font-family: Covered By Your Grace, sans-serif;
   color: var(--color-green);
   font-size: 3rem;
   line-height: 1.1;
@@ -574,7 +573,7 @@ table {
 }
 .steps__items--item:nth-child(2)::before {
   content: "02";
-  font-family: Covered By Your Grace;
+  font-family: Covered By Your Grace, sans-serif;
   color: var(--color-green);
   font-size: 3rem;
   line-height: 1.1;
@@ -584,7 +583,7 @@ table {
 }
 .steps__items--item:nth-child(3)::before {
   content: "03";
-  font-family: Covered By Your Grace;
+  font-family: Covered By Your Grace, sans-serif;
   color: var(--color-green);
   font-size: 3rem;
   line-height: 1.1;
@@ -594,7 +593,7 @@ table {
 }
 .steps__items--item:nth-child(4)::before {
   content: "04";
-  font-family: Covered By Your Grace;
+  font-family: Covered By Your Grace, sans-serif;
   color: var(--color-green);
   font-size: 3rem;
   line-height: 1.1;
@@ -624,19 +623,78 @@ table {
   opacity: 100%;
 }
 
+.reviews__wrapper {
+  text-align: center;
+}
+.reviews__title {
+  text-align: center;
+  margin-bottom: 4.375rem;
+}
+.reviews__card {
+  border: 2px solid var(--color-black);
+  border-radius: 0.9375rem;
+  padding: 2.125rem;
+}
+.reviews__card--user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.reviews__card--user--info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: Inter, sans-serif;
+}
+.reviews__card--user--avatar {
+  border-radius: 50%;
+}
+.reviews__card--user--name {
+  color: var(--color-black);
+}
+.reviews__card--user--username {
+  color: var(--color-gray);
+  font-size: 0.875rem;
+}
+.reviews__card--text {
+  font-family: Inter, sans-serif;
+  line-height: 2;
+  color: var(--color-gray);
+}
+.reviews__button {
+  padding: 1.375rem 4.125rem;
+  text-transform: uppercase;
+  margin-top: 4.375rem;
+}
+@media (max-width: 574.98px) {
+  .reviews__title {
+    margin-bottom: 2rem;
+  }
+  .reviews__card {
+    padding: 1.5rem;
+  }
+  .reviews__card--text {
+    font-size: 0.8125rem;
+  }
+  .reviews__button {
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+  }
+}
+
 .btn {
   font-size: 0.9375rem;
-  padding: 0.8125rem 1.375rem;
   border-radius: 0.75rem;
   border: 2px solid var(--color-black);
   box-shadow: 3px 3px 0px 0px rgb(46, 47, 53);
   transition: all 0.3s ease-in-out;
 }
-.btn_primary {
+.btn--primary {
   background: var(--color-white);
   color: var(--color-black);
 }
-.btn_secondary {
+.btn--secondary {
   background: var(--color-orange);
   color: var(--color-white);
 }
@@ -659,7 +717,7 @@ table {
   line-height: 1.2;
 }
 .title span {
-  font-family: Covered By Your Grace;
+  font-family: Covered By Your Grace, sans-serif;
   color: var(--color-green);
 }
 @media (max-width: 767.98px) {

@@ -1,11 +1,11 @@
 .section {
   padding: 6.625rem 0 6rem;
 
-  @media (max-width: $--bp-tablet) {
+  @media (max-width: $bp-tablet) {
     padding: 3rem 0;
   }
 
-  @media (max-width: $--bp-mobile-l) {
+  @media (max-width: $bp-mobile-l) {
     padding: 1.5rem 0;
   }
 }
