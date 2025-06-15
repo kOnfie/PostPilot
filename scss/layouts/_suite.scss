@@ -60,7 +60,7 @@
     }
   }
 
-  @media (max-width: $bp-laptop) {
+  @media (max-width: $bp-laptop-s) {
     &_list {
       grid-template-columns: repeat(2, 1fr);
     }

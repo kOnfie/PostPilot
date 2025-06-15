@@ -1,3 +1,136 @@
 .footer {
-  padding: 96px 75px 0;
+  padding: 6rem 4.6875rem 0;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.625rem;
+
+    font-family: Inter, sans-serif;
+
+    padding-bottom: 6rem;
+
+    h6 {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.0938rem;
+    }
+  }
+
+  &__intro {
+    max-width: 18.4375rem;
+
+    &--icon {
+      margin-bottom: 1.5625rem;
+    }
+
+    &--text {
+      font-size: 0.875rem;
+      color: var(--color-gray);
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 7.9375rem;
+
+    margin-top: 1.6875rem;
+
+    &--list {
+      display: grid;
+      gap: 0.8125rem;
+    }
+  }
+
+  &__contact {
+    &--email {
+      margin-top: 1.6875rem;
+      margin-bottom: 1.625rem;
+    }
+
+    &--text {
+      color: var(--color-gray);
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid #e6e6e7;
+
+    padding: 3.0625rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__tabs {
+    button {
+      &:first-child {
+        margin-right: 0.625rem;
+      }
+      padding: 0.5625rem 1.5rem;
+    }
+  }
+
+  @media (max-width: $bp-laptop-m) {
+    &__links {
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: $bp-laptop-s) {
+    &__intro {
+      max-width: 10rem;
+
+      &--icon {
+        margin-bottom: 1rem;
+      }
+
+      &--text {
+        font-size: 0.75rem;
+      }
+    }
+    &__company,
+    &__contact {
+      font-size: 0.75rem;
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    padding: 3rem 2rem 0;
+
+    &__intro {
+      max-width: 100%;
+    }
+
+    &__body {
+      flex-direction: column;
+      gap: 2rem;
+
+      padding-bottom: 2rem;
+    }
+
+    &__bottom {
+      padding: 2rem 0;
+
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    &__tabs {
+      width: 15rem;
+
+      display: grid;
+      gap: 0.5rem;
+
+      button {
+        width: 100%;
+      }
+    }
+
+    &__logo {
+      text-align: center;
+    }
+  }
 }

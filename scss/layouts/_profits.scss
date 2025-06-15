@@ -46,7 +46,7 @@
     font-weight: 700;
   }
 
-  @media (max-width: $bp-laptop) {
+  @media (max-width: $bp-laptop-s) {
     &__wrapper {
       flex-direction: column;
     }
